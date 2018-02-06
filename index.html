@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Formularz - zadanie 2</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -22,24 +23,26 @@
             
             <label for="phone">Telefon</label> <br>
             <input type="number" id="phone" name="phone"><br>
-            
-            <label for="phone">Telefon</label> <br>
-            <input type="number" id="phone" name="phone"><br>
-            
+                 
              <label for="city">Wybór miasta</label> <br>
-                <select name="city">
-	                <option selected="selected">Krakow</option>
-	                <option>Warszawa</option>
-	                <option>Gdańsk</option>
-	            </select>
+                <select id="city" name="city">
+	                <option value="First choice">Krakow</option>
+	                <option value="Second choice">Warszawa</option>
+	                <option value="third choice">Gdańsk</option>
+	            </select> <br>
+	            
+	        <p><label id="gender">Płec</label> <br>
+	        <input type="radio" name="gender" value="Kobieta" />Kobieta
+            <input type="radio" name="gender" value="Mężczyzna" />Mężczyzna <br> </p>
+               
+           <p><label for="agreement">Zgoda na przetwarzanie danych osobowych</label> 
+               <input type="checkbox" id="agreement" name="agreement" value="tak"> <br></p>
             
             <label for="msg">Wiadomosc</label><br>
             <textarea name="msg" id="msg" cols="30" rows="10"></textarea> <br>
             <input type="submit" value="wyslij">
         </form>
     </div>
-
-
 
 </body>
 
